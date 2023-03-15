@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Woo.Wobot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="120" Width="800">
     <Grid>
-        <Label Name="HelloLabel" FontSize="90" Margin="58,129,-58,-129"/>
+        <TextBox x:Name="CommandInput" Margin="0,0,0,0" VerticalAlignment="Center" Width="710" Height="65" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+        <Button Click="CommandBtn_Click" x:Name="CommandBtn" Content="Button" HorizontalAlignment="Left" Margin="710,10,0,0" VerticalAlignment="Center" Height="65" Width="65"/>
     </Grid>
 </Window>

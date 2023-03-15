@@ -18,6 +18,11 @@ public partial class MainWindow : Window
 
     protected override void OnContentRendered(EventArgs e)
     {
-        HelloLabel.Content = _helloWorldService.SayHello();
+        //HelloLabel.Content = _helloWorldService.SayHello();
+    }
+
+    private void CommandBtn_Click(object sender, RoutedEventArgs e)
+    {
+        CommandInput.Text = "Executed";
     }
 }
