@@ -29,8 +29,9 @@ public class CommandDecisionStep : CompositeActivity
             if (command.StartsWith(CommandNameConsts.Wobot)) {
                 context.SetVariable("CommandType", CommandNameConsts.Wobot);
             }
+            else { 
             context.SetVariable("CommandType", CommandNameConsts.Custom);
-
+            }
         });
     }
 }
