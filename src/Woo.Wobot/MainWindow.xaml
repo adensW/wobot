@@ -3,11 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Woo.Wobot"
+        xmlns:local="clr-namespace:Woo.Wobot" 
+        xmlns:viewmodel="clr-namespace:Woo.Wobot.ViewModel" 
+        d:DataContext="{d:DesignInstance Type=viewmodel:MainWindowViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="120" Width="800">
     <Grid>
-        <TextBox x:Name="CommandInput" Margin="0,0,0,0" VerticalAlignment="Center" Width="710" Height="65" TextWrapping="Wrap" HorizontalAlignment="Left"/>
-        <Button Click="CommandBtn_Click" x:Name="CommandBtn" Content="Button" HorizontalAlignment="Left" Margin="710,10,0,0" VerticalAlignment="Center" Height="65" Width="65"/>
+        <TextBox Text="{Binding CommandStr}" x:Name="CommandInput"  Margin="0,0,0,0" VerticalAlignment="Center" Width="710" Height="65" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+        <Button x:Name="CommandBtn" Content="Exceute" Command="{Binding ExecuteCommand}"  HorizontalAlignment="Left" Margin="710,0,0,0" VerticalAlignment="Center" Height="65" Width="65"></Button>
     </Grid>
 </Window>

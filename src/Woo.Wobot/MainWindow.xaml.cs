@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using Woo.Wobot.ViewModel;
 
 namespace Woo.Wobot;
 
@@ -13,16 +14,8 @@ public partial class MainWindow : Window
     public MainWindow(HelloWorldService helloWorldService)
     {
         _helloWorldService = helloWorldService;
+        DataContext = new MainWindowViewModel();
         InitializeComponent();
     }
-
-    protected override void OnContentRendered(EventArgs e)
-    {
-        //HelloLabel.Content = _helloWorldService.SayHello();
-    }
-
-    private void CommandBtn_Click(object sender, RoutedEventArgs e)
-    {
-        CommandInput.Text = "Executed";
-    }
+   
 }
