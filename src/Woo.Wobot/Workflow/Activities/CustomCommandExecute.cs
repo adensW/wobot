@@ -27,7 +27,7 @@ public class CustomCommandExecute : CompositeActivity
         string[] adensPatterns = new string[]{
             "github.com/adensw/*",
             "git.adens.cn/*"};
-        string githubPattern= "github.com/(?!adensw)*";
+        string githubPattern= "github.com/(?!adensw)/*";
         try{ 
         if(Regex.IsMatch(command, githubPattern))
         {
