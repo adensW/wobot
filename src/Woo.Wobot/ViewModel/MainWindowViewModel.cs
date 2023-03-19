@@ -41,11 +41,11 @@ namespace Woo.Wobot.ViewModel
             try { 
                 var result = await _workflowRunner.BuildAndStartWorkflowAsync<StartWorkflow>(input: new WorkflowInput(CommandStr));
 
-                CommandStr += "Executed";
+                CommandStr = "";
             }
             catch (TaskCanceledException ex)
             {
-                CommandStr += "x";
+                CommandStr = "";
             }
         }
     }

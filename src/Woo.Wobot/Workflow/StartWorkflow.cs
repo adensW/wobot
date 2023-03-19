@@ -29,6 +29,9 @@ public class StartWorkflow : IWorkflow
             {
                 @case.Then<WobotCommandExecute>();
             })
+            .Add(context => context.GetVariable<string>("CommandType")==CommandNameConsts.Custom, @case => {
+                @case.Then<CustomCommandExecute>();
+            })
             );
         //    .Then<CommandDecisionStep>((command) =>
         //    {
