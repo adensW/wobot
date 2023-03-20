@@ -8,8 +8,8 @@
 
   <Identity
     Name="ae35ba2e-18c1-4a4d-9cba-a94748beca8f"
-    Publisher="CN=wangdingchen"
-    Version="1.0.0.0" />
+    Publisher="CN=adens"
+    Version="0.1.2.0" />
 
   <Properties>
     <DisplayName>Woo.Wobot.Package</DisplayName>

@@ -52,7 +52,7 @@ jobs:
           - channel: Prod_Sideload
             Configuration: Release
             ChannelName: Prod_Sideload
-            DistributionUrl: https://api.github.com/adensW/wobot
+            DistributionUrl: https://github.com/adensW/wobot/release/download/${{ github.ref_name }}/Wobot.zip
             MsixPackageId: Woo.Wobot
             MsixPublisherId: CN=Woo
             MsixPackageDisplayName: Wobot
@@ -169,7 +169,7 @@ jobs:
       #  token: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
         tag: ${{ github.ref_name }}
-        name: ${{ env.App_Packages_Archive }}
+        name: Wobot@${{ github.ref_name }}
         artifacts: ${{ env.Wap_Project_Directory }}\${{ env.App_Packages_Directory }}\${{ env.App_Packages_Archive }}
         artifactContentType: application/zip
         draft: false
