@@ -69,7 +69,7 @@ jobs:
 
     env:
       App_Packages_Archive: Wobot.zip
-      App_Packages_Directory: Packages
+      App_Packages_Directory: AppPackages
       #SigningCertificate: GitHubActionsDemo.pfx
       Solution_Path: Woo.Wobot.sln
       Test_Project_Path: test\Woo.Wobot.Tests\Woo.Wobot.Tests.csproj
