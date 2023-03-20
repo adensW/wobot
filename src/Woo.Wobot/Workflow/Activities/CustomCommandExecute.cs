@@ -15,7 +15,7 @@ public class CustomCommandExecute : CompositeActivity
     public override async ValueTask<IActivityExecutionResult> ExecuteAsync(ActivityExecutionContext context)
     {
         var command = context.GetVariable<string>("Command").ToLowerInvariant();
-        Regex repoPattern =new Regex(@"(github\.com|adens\.cn)/\w+/(\w+)\.git");
+        Regex repoPattern =new Regex(@"(github\.com|adens\.cn)/[\w\-_]+/([\w\-_]+)\.git");
         var match = repoPattern.Match(command);
         string repo = "";
         if (match.Success)

@@ -4,7 +4,9 @@ using Elsa.Models;
 using Elsa.Services;
 using System;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using System.Windows.Interop;
 using Volo.Abp.DependencyInjection;
 using Woo.Wobot.Workflow;
 
@@ -13,10 +15,15 @@ namespace Woo.Wobot.ViewModel
     public  partial class MainWindowViewModel : ObservableObject,ITransientDependency
     {
         private readonly IBuildsAndStartsWorkflow _workflowRunner;
-
+       
+        /// <summary>
+        /// Event for clipboard update notification.
+        /// </summary>
+        public event EventHandler ClipboardUpdate;
         public MainWindowViewModel(IBuildsAndStartsWorkflow workflowRunner)
         {
             _workflowRunner = workflowRunner;
+          
         }
 
         [ObservableProperty]
