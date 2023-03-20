@@ -51,7 +51,7 @@ jobs:
           - channel: Prod_Sideload
             Configuration: Release
             ChannelName: Prod_Sideload
-            #DistributionUrl: https://api.github.com/adensW/wobot
+            DistributionUrl: https://api.github.com/adensW/wobot
             MsixPackageId: Woo.Wobot
             MsixPublisherId: CN=Woo
             MsixPackageDisplayName: Wobot
