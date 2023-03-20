@@ -8,11 +8,12 @@
       <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
       <UseWPF>true</UseWPF>
       <NoWarn>NU1608</NoWarn>
+      <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
-        <PackageReference Include="Elsa" Version="2.10.2.2"/>
+        <PackageReference Include="Elsa" Version="2.10.2.2" />
         <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
         <PackageReference Include="Volo.Abp.Autofac" Version="7.0.3" />
     </ItemGroup>
