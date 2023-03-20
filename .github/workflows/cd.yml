@@ -163,7 +163,7 @@ jobs:
     # Create the release:  https://github.com/actions/create-release
     - name: Release
       id: release
-      uses: ncipollo/release-release@v1
+      uses: ncipollo/release-action@v1
       #env:
       #  token: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
