@@ -35,7 +35,7 @@ jobs:
         #channel: [Dev, Prod_Sideload]
         #targetPlatform: [x86, x64] 
         channel: [Prod_Sideload]
-        targetPlatform: [x86,x64]
+        targetPlatform: [x64]
         include:
 
           # includes the following variables for the matrix leg matching Dev
