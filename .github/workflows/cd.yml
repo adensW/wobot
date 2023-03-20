@@ -35,7 +35,7 @@ jobs:
         #channel: [Dev, Prod_Sideload]
         #targetPlatform: [x86, x64] 
         channel: [Prod_Sideload]
-        targetPlatform: [x64]
+        targetPlatform: [x86,x64]
         include:
 
           # includes the following variables for the matrix leg matching Dev
@@ -51,7 +51,7 @@ jobs:
           - channel: Prod_Sideload
             Configuration: Release
             ChannelName: Prod_Sideload
-            #DistributionUrl: https://github.com/adensW/wobot
+            #DistributionUrl: https://api.github.com/adensW/wobot
             MsixPackageId: Woo.Wobot
             MsixPublisherId: CN=Woo
             MsixPackageDisplayName: Wobot
