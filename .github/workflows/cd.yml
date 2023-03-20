@@ -170,7 +170,7 @@ jobs:
       with:
         tag: ${{ github.ref}}.${{matrix.ChannelName}}.${{ matrix.targetplatform }}
         name: ${{ env.App_Packages_Archive }}
-        bodyFile: ${{ env.Wap_Project_Directory }}\${{ env.App_Packages_Directory }}\${{ env.App_Packages_Archive }}
+        artifacts: ${{ env.Wap_Project_Directory }}\${{ env.App_Packages_Directory }}\${{ env.App_Packages_Archive }}
         artifactContentType: application/zip
         draft: false
         prerelease: false
