@@ -72,7 +72,7 @@ jobs:
       Solution_Path: Woo.Wobot.sln
       Test_Project_Path: test\Woo.Wobot.Tests\Woo.Wobot.Tests.csproj
       Wpf_Project_Path: src\Woo.Wobot\Woo.Wobot.csproj
-      Wap_Project_Directory: src\Woo.Wobot.Package\Woo.Wobot.Package
+      Wap_Project_Directory: src\Woo.Wobot.Package
       Wap_Project_Name: Woo.Wobot.Package.wapproj
       Actions_Allow_Unsecure_Commands: true # Allows AddPAth and SetEnv commands
 
