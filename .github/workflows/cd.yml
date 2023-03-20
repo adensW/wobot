@@ -39,13 +39,13 @@ jobs:
         include:
 
           # includes the following variables for the matrix leg matching Dev
-          - channel: Dev
-            ChannelName: Dev
-            Configuration: Debug
-            #DistributionUrl: https://microsoft.github.io/github-actions-for-desktop-apps-distribution-dev
-            MsixPackageId: Woo.Wobot.Dev
-            MsixPublisherId: CN=Adens
-            MsixPackageDisplayName: Wobot (Dev)
+          #- channel: Dev
+          #  ChannelName: Dev
+          #  Configuration: Debug
+          #  #DistributionUrl: https://microsoft.github.io/github-actions-for-desktop-apps-distribution-dev
+          #  MsixPackageId: Woo.Wobot.Dev
+          #  MsixPublisherId: CN=Adens
+          #  MsixPackageDisplayName: Wobot (Dev)
 
           # includes the following variables for the matrix leg matching Prod_Sideload
           - channel: Prod_Sideload
