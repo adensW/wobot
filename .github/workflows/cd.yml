@@ -32,8 +32,10 @@ jobs:
     # development, production for sideload applications and production for the Microsoft store.
     # For more information, see https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#configuring-a-build-matrix
       matrix:
-        channel: [Dev, Prod_Sideload]
-        targetPlatform: [x86, x64]
+        #channel: [Dev, Prod_Sideload]
+        #targetPlatform: [x86, x64] 
+        channel: [Prod_Sideload]
+        targetPlatform: [x64]
         include:
 
           # includes the following variables for the matrix leg matching Dev
